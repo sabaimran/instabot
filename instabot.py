@@ -39,6 +39,9 @@ def select_new_post_button():
     new_post_button = browser.find_element_by_css_selector("button[class='wpO6b ZQScA ']")
     new_post_button.click()
 
+    fileInput = browser.find_element_by_css_selector("input[type='file']")
+    fileInput.send_keys('/home/saba/Pictures/Wallpapers/zebra-pack.jpg')
+
 if __name__ == '__main__':
 
     args = parse_arguments()
