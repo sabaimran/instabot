@@ -1,2 +1,10 @@
 username: username 
 password: password
+button-selector: "dfdIO cdoI    cmdIJ     "
+caption-selector: "cmdOi"
+new-post-selector: "cmd3i 3kfmc "
+posts: 
+  - image_path: "./images/mystic_mountain.jpg"
+    caption: "wow what a neat mountain"
+  - image_path: "./images/cool_galaxy.jpg"
+    caption: "wow what a neat galaxy"
