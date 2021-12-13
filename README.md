@@ -8,7 +8,7 @@
 
 | Field | Screenshot |
 |-|-|
-| Replace `caption-selector` with the className for the New Post button. | ![New Post Button](docs/new-post.png) |
+| Replace `new-post-selector` with the className for the New Post button. | ![New Post Button](docs/new-post.png) |
 | Replace `button-selector` with the className for the Next button. This should cover all of our major buttons. | ![Next Button](docs/next-button.png) |
 | Replace `caption-selector` with the className for the Textarea in the captioning flow.| ![Caption Textarea](docs/caption-textarea.png)|
 
