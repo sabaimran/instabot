@@ -3,12 +3,20 @@
 1. `conda env create environment.yml`
 2. `sudo apt install firefox`
 ### Initialize your environment
-1. Replace `username` and `password` in your config with your username and password.
+1. Replace `username` and `password` in your config with your username and password. Remember **never** to commit & push your config!
+2. Determine the classNames associated with a few different components on your Instagram web page. This is a little bit cumbersome, and I'll try to find a way around it, but for now this is the process 😞
+
+| Field | Screenshot |
+|-|-|
+| Replace `caption-selector` with the className for the New Post button. | ![New Post Button](docs/new-post.png) |
+| Replace `button-selector` with the className for the Next button. This should cover all of our major buttons. | ![Next Button](docs/next-button.png) |
+| Replace `caption-selector` with the className for the Textarea in the captioning flow.| ![Caption Textarea](docs/caption-textarea.png)|
 
 ## Each time
 1. `conda activate instabot`
 2. `python3 instabot.py --c sample_config.yml`
-    - Replace `sample_config.yml` with your config file
+    - Replace `sample_config.yml` with your config file.
+    - The `sample_config.yml` file is preloaded with reference to a couple of test images you can use to try the tool out.
 
 # Built with
 - [Github Copilot](https://copilot.github.com/)
