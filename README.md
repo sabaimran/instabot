@@ -18,17 +18,17 @@ With a bit of configuration, this script will let you publish a photo with a cap
 | Replace `caption-selector` with the className for the Textarea in the captioning flow.| ![Caption Textarea](docs/caption-textarea.png)|
 
 ## Each time
-1. `bash -i instabot.sh`
+1. `bash -i instabot.bash`
     - Replace `sample_config.yml` with your config file.
     - The `sample_config.yml` file is preloaded with reference to a couple of test images you can use to try the tool out.
 
 # Scheduling
 I created this project so I could automate posting photos to Instagram. To run the script on a schedule, I'm using [crontab](https://man7.org/linux/man-pages/man5/crontab.5.html). 
 1. Open up your `crontab` configuration to edit.
-  - `crontab -e`
+    - `crontab -e`
 2. Add the entry to schedule the `instabot.py` script.
-  - `m h dom m dow DISPLAY=:0 /home/user/path/to/this-project/insta-bot/instabot.bash`
-    - The `DISPLAY:=0` allows us to launch the Firefox browser via a `cronjob` in headless mode (i.e., without a display).
+    - `m h dom m dow DISPLAY=:0 /home/user/path/to/this-project/insta-bot/instabot.bash`
+      - The `DISPLAY:=0` allows us to launch the Firefox browser via a `cronjob` in headless mode (i.e., without a display).
 
 # Built with
 - [Github Copilot](https://copilot.github.com/)
