@@ -1,6 +1,7 @@
 from time import sleep
 from selenium import webdriver
 from os.path import abspath
+from selenium.webdriver.chrome import options
 import yaml
 import argparse
 import atexit
@@ -33,8 +34,9 @@ def update_config(config_path: str, config: dict):
 def open_browser():
     # Setup and open the Firefox browser
     global browser
-    browser = webdriver.Firefox()
-    # browser.maximize_window()
+    opts = webdriver.FirefoxOptions()
+    opts.add_argument("--headless")
+    browser = webdriver.Firefox(options=opts)
     browser.implicitly_wait(5)
     browser.get('https://www.instagram.com/')
 

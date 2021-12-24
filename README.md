@@ -1,3 +1,7 @@
+# Instabot
+I created this tiny application so that I could ease the process of posting to Instagram. I didn't want to have to open up the app to post manually, but I still felt like it's good practice to share some of my photography on occasion.
+With a bit of configuration, this script will let you publish a photo with a caption of your choosing to an account for which you have login credentials!
+
 # Run it!
 ## First time
 1. `conda env create environment.yml`
@@ -17,6 +21,14 @@
 1. `bash -i instabot.sh`
     - Replace `sample_config.yml` with your config file.
     - The `sample_config.yml` file is preloaded with reference to a couple of test images you can use to try the tool out.
+
+# Scheduling
+I created this project so I could automate posting photos to Instagram. To run the script on a schedule, I'm using [crontab](https://man7.org/linux/man-pages/man5/crontab.5.html). 
+1. Open up your `crontab` configuration to edit.
+  - `crontab -e`
+2. Add the entry to schedule the `instabot.py` script.
+  - `m h dom m dow DISPLAY=:0 /home/user/path/to/this-project/insta-bot/instabot.bash`
+    - The `DISPLAY:=0` allows us to launch the Firefox browser via a `cronjob` in headless mode (i.e., without a display).
 
 # Built with
 - [Github Copilot](https://copilot.github.com/)
