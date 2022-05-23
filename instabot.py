@@ -36,6 +36,7 @@ def open_browser():
     global browser
     opts = webdriver.FirefoxOptions()
     opts.add_argument("--headless")
+    opts.add_argument("--profile=/path/to/snap/firefox/common/.mozilla/firefox/filename.default-release")
     browser = webdriver.Firefox(options=opts)
     browser.implicitly_wait(5)
     browser.get('https://www.instagram.com/')
